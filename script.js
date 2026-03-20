@@ -90,34 +90,25 @@ function initContactForm() {
         form.addEventListener('submit', (e) => {
             e.preventDefault();
 
-            // Get form data
-            const formData = new FormData(form);
-            const data = {
-                name: formData.get('name'),
-                email: formData.get('email'),
-                subject: formData.get('subject'),
-                message: formData.get('message')
-            };
+            const name = form.querySelector('#name').value;
+            const email = form.querySelector('#email').value;
+            const subject = form.querySelector('#subject').value;
+            const message = form.querySelector('#message').value;
 
-            // Simulate form submission
-            console.log('Form submitted:', data);
+            const subjectLine = `[Technobolts Website] ${subject} from ${name}`;
+            const body = `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}`;
+            const mailtoLink = `mailto:ftctechnobolts@gmail.com?subject=${encodeURIComponent(subjectLine)}&body=${encodeURIComponent(body)}`;
 
-            // Show success message
+            window.location.href = mailtoLink;
+
             if (formMessage) {
-                formMessage.textContent = '✓ Message sent! We\'ll get back to you within 48 hours.';
+                formMessage.textContent = '✓ Opening your email client… If nothing opens, email us directly at ftctechnobolts@gmail.com';
                 formMessage.style.display = 'block';
-                formMessage.style.animation = 'fadeIn 0.3s ease';
             }
 
-            // Reset form
-            form.reset();
-
-            // Hide message after 4 seconds
             setTimeout(() => {
-                if (formMessage) {
-                    formMessage.style.display = 'none';
-                }
-            }, 4000);
+                if (formMessage) formMessage.style.display = 'none';
+            }, 6000);
         });
     }
 }
