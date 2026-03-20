@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Technobolts FTC Team</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <div class="brand-icon">⚡</div>
+                <div class="brand-text">
+                    <span class="brand-name">Technobolts</span>
+                    <span class="brand-subtitle">ftc team #25687</span>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="robot.html" class="nav-link">Robot</a>
+                <a href="outreach.html" class="nav-link">Outreach</a>
+                <a href="competitions.html" class="nav-link">Competitions</a>
+                <a href="sponsors.html" class="nav-link">Sponsors</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <button class="btn-support">Support Our Team</button>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="page-section">
+        <div class="section-container">
+            <div class="section-header">
+                <p class="section-label">GET IN TOUCH</p>
+                <h1 class="section-title">Contact <span class="gradient-text">Us</span></h1>
+                <p class="section-description">Whether you're interested in sponsoring our team, collaborating on outreach, or just want to learn more about what we do — we'd love to hear from you.</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <!-- Email -->
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <h3>Email</h3>
+                        <a href="mailto:circuitbreakers25687@gmail.com">circuitbreakers25687@gmail.com</a>
+                    </div>
+
+                    <!-- Location -->
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Location</h3>
+                        <p>Based in Connecticut</p>
+                        <p>Engineering Lab, Room 204</p>
+                    </div>
+
+                    <!-- Hours -->
+                    <div class="contact-card">
+                        <div class="contact-icon">🕐</div>
+                        <h3>Meeting Times</h3>
+                        <p>Monday, Wednesday, Friday</p>
+                        <p>3:30 PM – 6:00 PM</p>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="contact-card social-links">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" title="Instagram">📷 Instagram</a>
+                            <a href="#" title="YouTube">🎥 YouTube</a>
+                            <a href="#" title="Twitter">𝕏 Twitter</a>
+                            <a href="#" title="GitHub">💻 GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="sponsorship">Sponsorship Inquiry</option>
+                                <option value="outreach">Outreach Collaboration</option>
+                                <option value="general">General Question</option>
+                                <option value="media">Media Request</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Send Message →</button>
+                    </form>
+                    <div id="formMessage" class="form-message" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="brand-icon">⚡</div>
+                <div class="brand-text">
+                    <span class="brand-name">Technobolts</span>
+                    <span class="brand-subtitle">ftc team #25687</span>
+                </div>
+                <p class="footer-description">Engineering the future through robotics, STEM education, and community outreach.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="robot.html">Robot</a>
+                <a href="outreach.html">Outreach</a>
+                <a href="competitions.html">Competitions</a>
+                <a href="sponsors.html">Sponsors</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <a href="mailto:circuitbreakers25687@gmail.com">circuitbreakers25687@gmail.com</a>
+                <p>Based in Connecticut</p>
+                <p></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Technobolts</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

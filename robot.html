@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot - Technobolts FTC Team</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <div class="brand-icon">⚡</div>
+                <div class="brand-text">
+                    <span class="brand-name">Technobolts</span>
+                    <span class="brand-subtitle">ftc team #25687</span>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="robot.html" class="nav-link active">Robot</a>
+                <a href="outreach.html" class="nav-link">Outreach</a>
+                <a href="competitions.html" class="nav-link">Competitions</a>
+                <a href="sponsors.html" class="nav-link">Sponsors</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="btn-support">Support Our Team</button>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Robot Section -->
+    <section class="page-section">
+        <div class="section-container">
+            <div class="section-header">
+                <p class="section-label">ROBOT SHOWCASE</p>
+                <h1 class="section-title">Meet <span class="gradient-text">"Doggo"</span></h1>
+                <p class="section-description" style="color: #0cdeed;">Meet "Doggo"— our 2025-2026 season competition robot, engineered for speed, precision, and reliability on the FTC playing field.</p>
+            </div>
+
+            <!-- Robot Image & Subsystems -->
+            <div class="robot-showcase">
+                <div class="robot-image-container">
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663417689646/Ldj4nhu3y7unNHha3GYmi4/WhatsAppImage2026-01-03at6.21.35PM-yFXiKmKQNmEHKXfHKgPpCL.webp" alt="Technobolts competition robot">
+                    <div class="robot-overlay"></div>
+                </div>
+                <div class="subsystems-container">
+                    <div class="subsystems-tabs">
+                        <button class="subsystem-tab active" data-subsystem="drive">
+                            <span class="tab-label">Turret System</span>
+                        </button>
+                        <button class="subsystem-tab" data-subsystem="intake">
+                            <span class="tab-label">Limelight</span>
+                        </button>
+                        <button class="subsystem-tab" data-subsystem="lift">
+                            <span class="tab-label">Heck of an Auto</span>
+                        </button>
+                    </div>
+                    <div class="subsystem-content">
+                        <div class="subsystem-item active" id="drive">
+                            <h3>Turret System</h3>
+                            <p>Advanced turret mechanism for precise targeting and scoring with 360° rotation capability.</p>
+                            <ul>
+                                <li>High-precision servo control</li>
+                                <li>Rapid fire capability</li>
+                                <li>Integrated vision tracking</li>
+                            </ul>
+                        </div>
+                        <div class="subsystem-item" id="intake">
+                            <h3>Limelight Vision</h3>
+                            <p>Advanced computer vision system for autonomous target detection and alignment.</p>
+                            <ul>
+                                <li>Real-time target tracking</li>
+                                <li>Automatic alignment</li>
+                                <li>Low-latency processing</li>
+                            </ul>
+                        </div>
+                        <div class="subsystem-item" id="lift">
+                            <h3>Heck of an Auto</h3>
+                            <p>Sophisticated autonomous routine with complex pathfinding and scoring sequences.</p>
+                            <ul>
+                                <li>Multi-stage scoring</li>
+                                <li>Adaptive positioning</li>
+                                <li>Fail-safe recovery</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Specs -->
+            <div class="tech-specs">
+                <h2>Technical Specifications</h2>
+                <div class="specs-grid">
+                    <div class="spec-card">
+                        <h4>Drive System</h4>
+                        <p>Mecanum wheels for omnidirectional movement</p>
+                    </div>
+                    <div class="spec-card">
+                        <h4>Power</h4>
+                        <p>REV Robotics battery system with dual motors</p>
+                    </div>
+                    <div class="spec-card">
+                        <h4>Control</h4>
+                        <p>Android-based control system with Java programming</p>
+                    </div>
+                    <div class="spec-card">
+                        <h4>Sensors</h4>
+                        <p>Limelight, IMU, and encoder feedback systems</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="brand-icon">⚡</div>
+                <div class="brand-text">
+                    <span class="brand-name">Technobolts</span>
+                    <span class="brand-subtitle">ftc team #25687</span>
+                </div>
+                <p class="footer-description">Engineering the future through robotics, STEM education, and community outreach.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="robot.html">Robot</a>
+                <a href="outreach.html">Outreach</a>
+                <a href="competitions.html">Competitions</a>
+                <a href="sponsors.html">Sponsors</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <a href="mailto:circuitbreakers25687@gmail.com">circuitbreakers25687@gmail.com</a>
+                <p>Based in Connecticut</p>
+                <p></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Technobolts</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
